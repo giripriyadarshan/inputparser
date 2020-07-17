@@ -57,7 +57,7 @@ pub fn flo64conv() -> f64 {
                 break;
             }
         } else {
-            println!("please enter numbers only, special characters not supported");
+            println!("please enter floating integers only, special characters not supported");
         }
     }
     let s: f64 = s.to_string().trim().parse().unwrap();
@@ -73,7 +73,7 @@ pub fn flo32conv() -> f32 {
                 break;
             }
         } else {
-            println!("please enter numbers only, special characters not supported");
+            println!("please enter floating integers only, special characters not supported");
         }
     }
     let s: f32 = s.to_string().trim().parse().unwrap();
@@ -83,4 +83,20 @@ pub fn stringinput() -> String {
     let mut s: String = String::new();
     io::stdin().read_line(&mut s).unwrap();
     return s.trim().to_string();
+}
+pub fn boolconv() -> bool {
+    let mut s: String = String::new();
+    loop {
+        s.clear();
+        io::stdin().read_line(&mut s).unwrap();
+        if let Ok(s) = s.trim().parse::<bool>() {
+            if s == true || s == false {
+                break;
+            }
+        } else {
+            println!("Please enter true or false");
+        }
+    }
+    let s: bool = s.to_string().trim().parse().unwrap();
+    return s;
 }
