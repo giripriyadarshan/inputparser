@@ -1,0 +1,7 @@
+[package]
+name = "inputparser"
+version = "0.1.0"
+authors = ["Priyadarshan Giri <giripriyadarshan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
