@@ -79,3 +79,8 @@ pub fn flo32conv() -> f32 {
     let s: f32 = s.to_string().trim().parse().unwrap();
     return s;
 }
+pub fn stringinput() -> String {
+    let mut s: String = String::new();
+    io::stdin().read_line(&mut s).unwrap();
+    return s.trim().to_string();
+}
