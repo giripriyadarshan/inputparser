@@ -1,5 +1,5 @@
 use std::io;
-pub fn int128conv() -> i128 {
+pub fn inti128conv() -> i128 {
     let mut s: String = String::new();
     loop {
         s.clear();
@@ -13,7 +13,7 @@ pub fn int128conv() -> i128 {
         }
     }
 }
-pub fn int08conv() -> i8 {
+pub fn inti8conv() -> i8 {
     let mut s: String = String::new();
     loop {
         s.clear();
@@ -27,7 +27,7 @@ pub fn int08conv() -> i8 {
         }
     }
 }
-pub fn int16conv() -> i16 {
+pub fn inti16conv() -> i16 {
     let mut s: String = String::new();
     loop {
         s.clear();
@@ -41,7 +41,7 @@ pub fn int16conv() -> i16 {
         }
     }
 }
-pub fn int32conv() -> i32 {
+pub fn inti32conv() -> i32 {
     let mut s: String = String::new();
     loop {
         s.clear();
@@ -55,7 +55,7 @@ pub fn int32conv() -> i32 {
         }
     }
 }
-pub fn int64conv() -> i64 {
+pub fn inti64conv() -> i64 {
     let mut s: String = String::new();
     loop {
         s.clear();
