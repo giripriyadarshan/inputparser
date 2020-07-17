@@ -2,6 +2,12 @@
 name = "inputparser"
 version = "0.1.0"
 authors = ["Priyadarshan Giri <giripriyadarshan@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/giripriyadarshan/inputparser"
+description = "inputs made simple"
+license = "MIT"
+keywords = ["input","error-handling"]
+categories = ["Command-line interface","Parsing tools"]
 edition = "2018"
 
 [dependencies]
