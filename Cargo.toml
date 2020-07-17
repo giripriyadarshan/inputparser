@@ -4,6 +4,7 @@ version = "0.1.1"
 authors = ["Priyadarshan Giri <giripriyadarshan@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/giripriyadarshan/inputparser"
+homepage = "https://crates.io/crates/inputparser"
 description = "inputs made simple"
 license = "MIT"
 keywords = ["input","error-handling"]
