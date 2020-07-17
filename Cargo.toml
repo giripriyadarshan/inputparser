@@ -8,6 +8,7 @@ description = "inputs made simple"
 license = "MIT"
 keywords = ["input","error-handling"]
 categories = ["Command-line interface","Parsing tools"]
+exclude = ["target/**",".gitignore",".github/**","LICENSE-MIT"]
 edition = "2018"
 
 [dependencies]
