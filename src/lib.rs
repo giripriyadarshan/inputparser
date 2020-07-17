@@ -47,3 +47,35 @@ pub fn int64conv() -> i64 {
     let s: i64 = s.to_string().trim().parse().unwrap();
     return s;
 }
+pub fn flo64conv() -> f64 {
+    let mut s: String = String::new();
+    loop {
+        s.clear();
+        io::stdin().read_line(&mut s).unwrap();
+        if let Ok(s) = s.trim().parse::<f64>() {
+            if s > 0.0 || s == 0.0 || s < 0.0 {
+                break;
+            }
+        } else {
+            println!("please enter numbers only, special characters not supported");
+        }
+    }
+    let s: f64 = s.to_string().trim().parse().unwrap();
+    return s;
+}
+pub fn flo32conv() -> f32 {
+    let mut s: String = String::new();
+    loop {
+        s.clear();
+        io::stdin().read_line(&mut s).unwrap();
+        if let Ok(s) = s.trim().parse::<f32>() {
+            if s > 0.0 || s == 0.0 || s < 0.0 {
+                break;
+            }
+        } else {
+            println!("please enter numbers only, special characters not supported");
+        }
+    }
+    let s: f32 = s.to_string().trim().parse().unwrap();
+    return s;
+}
