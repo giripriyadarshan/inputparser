@@ -1,4 +1,4 @@
-[![crates.io version]][crates.io link] [![Crates.io Downloads]][crates.io link]]
+[![crates.io version]][crates.io link] [![Crates.io Downloads]][crates.io link]
 
 # inputparser
 Takes terminal input in specified format
