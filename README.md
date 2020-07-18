@@ -1,4 +1,4 @@
-[![crates.io version]][crates.io link] [![Crates.io Downloads]][crates.io link]
+[![crates.io version]][crates.io link] [![Crates.io Downloads]][crates.io link] [![crates.io license]][crates.io link]
 
 # inputparser
 Takes terminal input in specified format
@@ -46,3 +46,4 @@ fn main() {
 [crates.io link]: https://crates.io/crates/inputparser
 [crates.io version]: https://img.shields.io/crates/v/inputparser?style=for-the-badge
 [Crates.io Downloads]: https://img.shields.io/crates/d/inputparser?style=for-the-badge
+[crates.io license]: https://img.shields.io/crates/l/inputparser?style=for-the-badge
