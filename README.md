@@ -2,6 +2,7 @@
 
 # inputparser
 Takes terminal input in specified format
+Thanks to @Restioson#8323 and @ThatsNoMoon#0175 (Discord usernames)
 
 Instead of 
 ```rust
@@ -11,10 +12,9 @@ let input:i32=input.trim().parse().unwrap();
 ```
 why not 
 ```rust
-let input:i32= inputparser::inti32conv();
+let input:i32= inputparser::input();
 ```
-
-and it shows error and doesn't exit till proper input is entered
+and it doesn't panic when wrong format is entered.
 
 ## Usage
 ```toml
@@ -25,7 +25,7 @@ inputparser = "0.1"
 ### Example
 ```rust
 fn main() {
-  let i = inputparser::inti32conv();
+  let i:i32 = inputparser::input();
   println!("{}",i);
 }
 ```
