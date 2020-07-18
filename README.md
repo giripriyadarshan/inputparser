@@ -12,7 +12,7 @@ inputparser = "0.1"
 ### Example
 ```rust
 fn main() {
-  let i = inputparser::int32conv();
+  let i = inputparser::inti32conv();
   println!("{}",i);
 }
 ```

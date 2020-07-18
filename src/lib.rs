@@ -5,9 +5,7 @@ pub fn inti128conv() -> i128 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<i128>() {
-            if s > 0 || s == 0 || s < 0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -19,9 +17,7 @@ pub fn inti8conv() -> i8 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<i8>() {
-            if s > 0 || s == 0 || s < 0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -33,9 +29,7 @@ pub fn inti16conv() -> i16 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<i16>() {
-            if s > 0 || s == 0 || s < 0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -47,9 +41,7 @@ pub fn inti32conv() -> i32 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<i32>() {
-            if s > 0 || s == 0 || s < 0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -61,9 +53,7 @@ pub fn inti64conv() -> i64 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<i64>() {
-            if s > 0 || s == 0 || s < 0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -75,9 +65,7 @@ pub fn flo64conv() -> f64 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<f64>() {
-            if s > 0.0 || s == 0.0 || s < 0.0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -89,9 +77,7 @@ pub fn flo32conv() -> f32 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<f32>() {
-            if s > 0.0 || s == 0.0 || s < 0.0 {
                 break s;
-            }
         } else {
             println!("Input not supported");
         }
@@ -120,9 +106,7 @@ pub fn intu128conv() -> u128 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<u128>() {
-            if s > 0 || s == 0 {
                 break s;
-            }
         } else {
             println!("Please input numbers between 0 and {}", u128::MAX);
         }
@@ -134,9 +118,7 @@ pub fn intu64conv() -> u64 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<u64>() {
-            if s > 0 || s == 0 {
                 break s;
-            }
         } else {
             println!("Please input numbers between 0 and {}", u64::MAX);
         }
@@ -148,9 +130,7 @@ pub fn intu32conv() -> u32 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<u32>() {
-            if s > 0 || s == 0 {
                 break s;
-            }
         } else {
             println!("Please input numbers between 0 and {}", u32::MAX);
         }
@@ -162,9 +142,7 @@ pub fn intu16conv() -> u16 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<u16>() {
-            if s > 0 || s == 0 {
                 break s;
-            }
         } else {
             println!("Please input numbers between 0 and {}", u16::MAX);
         }
@@ -176,9 +154,7 @@ pub fn intu8conv() -> u8 {
         s.clear();
         io::stdin().read_line(&mut s).unwrap();
         if let Ok(s) = s.trim().parse::<u8>() {
-            if s > 0 || s == 0 {
                 break s;
-            }
         } else {
             println!("Please input numbers between 0 and {}", u8::MAX);
         }

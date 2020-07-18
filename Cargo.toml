@@ -1,6 +1,6 @@
 [package]
 name = "inputparser"
-version = "0.1.41"
+version = "0.1.5"
 authors = ["Priyadarshan Giri <giripriyadarshan@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/giripriyadarshan/inputparser"
@@ -10,6 +10,7 @@ license = "MIT"
 keywords = ["input","error-handling"]
 categories = ["command-line-interface","parsing"]
 exclude = ["target/**",".gitignore",".github/**","LICENSE-MIT"]
+documentation = "https://docs.rs/crate/inputparser/"
 edition = "2018"
 
 [dependencies]
