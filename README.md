@@ -3,6 +3,19 @@
 # inputparser
 Takes terminal input in specified format
 
+Instead of 
+```rust
+let mut input:String = String::new();
+io::stdin().read_line(&mut input).unwrap();
+let input:i32=input.trim().parse().unwrap();
+```
+why not 
+```rust
+let input:i32= inputparser::inti32conv();
+```
+
+and it shows error and doesn't exit till proper input is entered
+
 ## Usage
 ```toml
 [dependencies]
