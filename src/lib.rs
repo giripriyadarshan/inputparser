@@ -184,3 +184,15 @@ pub fn intisizeconv() -> isize {
         }
     }
 }
+pub fn charconv() -> char {
+    let mut s: String = String::new();
+    loop {
+        s.clear();
+        io::stdin().read_line(&mut s).unwrap();
+        if let Ok(s) = s.trim().parse::<char>() {
+            break s;
+        } else {
+            println!("Input not supported");
+        }
+    }
+}
