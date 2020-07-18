@@ -160,3 +160,27 @@ pub fn intu8conv() -> u8 {
         }
     }
 }
+pub fn intusizeconv() -> usize {
+    let mut s: String = String::new();
+    loop {
+        s.clear();
+        io::stdin().read_line(&mut s).unwrap();
+        if let Ok(s) = s.trim().parse::<usize>() {
+            break s;
+        } else {
+            println!("Input not supported");
+        }
+    }
+}
+pub fn intisizeconv() -> isize {
+    let mut s: String = String::new();
+    loop {
+        s.clear();
+        io::stdin().read_line(&mut s).unwrap();
+        if let Ok(s) = s.trim().parse::<isize>() {
+            break s;
+        } else {
+            println!("Input not supported");
+        }
+    }
+}
