@@ -2,17 +2,18 @@
 
 # inputparser
 Takes terminal input in specified format
-Thanks to @Restioson#8323 and @ThatsNoMoon#0175 (Discord usernames)
+
+Thanks to [@Restioson](https://github.com/Restioson) and [@ThatsNoMoon](https://github.com/ThatsNoMoon) for helping to write this crate
 
 Instead of 
 ```rust
-let mut input:String = String::new();
+let mut input: String = String::new();
 io::stdin().read_line(&mut input).unwrap();
-let input:i32=input.trim().parse().unwrap();
+let input: i32 = input.trim().parse().unwrap();
 ```
 why not 
 ```rust
-let input:i32= inputparser::input();
+let input: i32 = inputparser::input();
 ```
 and it doesn't panic when wrong format is entered.
 
@@ -23,10 +24,21 @@ inputparser = "0.1"
 ```
 
 ### Example
+Basic
 ```rust
 fn main() {
-  let i:i32 = inputparser::input();
-  println!("{}",i);
+    let i: i32 = inputparser::input();
+    println!("{}", i);
+}
+```
+Effective
+```rust
+extern crate inputparser;
+use crate::inputparser::input;
+
+fn main() {
+    let mut i: i32 = input();
+    println!("{}", i);
 }
 ```
 
