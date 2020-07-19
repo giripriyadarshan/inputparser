@@ -1,21 +1,21 @@
 [![crates.io version]][crates.io link] [![Crates.io Downloads]][crates.io link] [![crates.io license]][crates.io link]
 
 # inputparser
-Takes terminal input in specified format
+Note: Thanks to [@Restioson](https://github.com/Restioson) and [@ThatsNoMoon](https://github.com/ThatsNoMoon) for helping me write the code
 
-Thanks to [@Restioson](https://github.com/Restioson) and [@ThatsNoMoon](https://github.com/ThatsNoMoon) for helping to write this crate
+Takes terminal input in specified format
 
 Instead of 
 ```rust
-let mut input: String = String::new();
-io::stdin().read_line(&mut input).unwrap();
-let input: i32 = input.trim().parse().unwrap();
+let mut var: String = String::new();
+io::stdin().read_line(&mut var).unwrap();
+let var: i32 = var.trim().parse().unwrap();
 ```
 why not 
 ```rust
-let input: i32 = inputparser::input();
+let var: i32 = inputparser::input(Def);
 ```
-and it doesn't panic when wrong format is entered.
+and it doesn't panic when wrong format is entered (when default arg [Def]).
 
 ## Usage
 ```toml
@@ -24,21 +24,16 @@ inputparser = "0.1"
 ```
 
 ### Example
-Basic
-```rust
-fn main() {
-    let i: i32 = inputparser::input();
-    println!("{}", i);
-}
-```
-Effective
 ```rust
 extern crate inputparser;
 use crate::inputparser::input;
+use crate::inputparser::ErHandle::*;
 
 fn main() {
-    let mut i: i32 = input();
-    println!("{}", i);
+    let mut i: i32 = input(Def); //for Default continue message "Input not supported"
+    let mut j: i32 = input(Pnc("Panic Message")); //for custom panic message
+    let mut k: i32 = input(Msg("Continue Message")); //for custom continue message
+    println!("{} {} {}", i, j, k);
 }
 ```
 

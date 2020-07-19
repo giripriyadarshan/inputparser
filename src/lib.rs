@@ -1,7 +1,14 @@
 use std::io;
 use std::str::FromStr;
+use ErHandle::*;
 
-pub fn input<T>() -> T
+pub enum ErHandle<T> {
+    Pnc(T),
+    Msg(T),
+    Def,
+}
+
+pub fn input<T>(e: ErHandle<&str>) -> T
 where
     T: FromStr,
 {
@@ -12,7 +19,11 @@ where
         if let Ok(input) = input.trim().parse::<T>() {
             break input;
         } else {
-            println!("Input not supported");
+            match e {
+                Pnc(e) => panic!("{}", e),
+                Msg(e) => println!("{}", e),
+                Def => println!("Input not supported"),
+            }
         }
     }
 }
