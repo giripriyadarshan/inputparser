@@ -1,15 +1,15 @@
 [package]
 name = "inputparser"
-version = "0.1.70"
+version = "0.1.71"
 authors = ["Priyadarshan Giri <giripriyadarshan@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/giripriyadarshan/inputparser"
 homepage = "https://crates.io/crates/inputparser"
-description = "inputs made simple"
+description = "Terminal inputs made psuedo code like simple, like Python like simple ...... probably xD"
 license = "MIT"
-keywords = ["input","error-handling"]
-categories = ["command-line-interface","parsing"]
-exclude = ["target/**",".gitignore",".github/**","LICENSE-MIT"]
+keywords = ["input","error-handling","terminal","custom-messages","recoverable-errors","simple","python"]
+categories = ["command-line-interface","parsing","command-line-utilities"]
+exclude = ["target/**",".gitignore",".github/**","LICENSE-MIT",".idea/**"]
 edition = "2018"
 
 [dependencies]
