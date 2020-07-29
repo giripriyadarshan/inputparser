@@ -1,7 +1,7 @@
 [![crates.io version]][crates.io link] [![Crates.io Downloads]][crates.io link] [![crates.io license]][crates.io link] [![Discord image]][Discord server]
 
 # inputparser
-Note: Thanks to [@Restioson](https://github.com/Restioson) and [@ThatsNoMoon](https://github.com/ThatsNoMoon) for helping me write the code
+Note: Thanks to [@Restioson](https://github.com/Restioson), [@ThatsNoMoon](https://github.com/ThatsNoMoon) and [@kangalioo](https://github.com/kangalioo) for helping me write the code
 
 Now Rust inputs are almost as simple as **Python**
 
@@ -32,7 +32,7 @@ inputparser = "0.1"
 ### Example
 ```rust
 extern crate inputparser;
-use crate::inputparser::{input,ErHandle::*,input_w_msg};
+use inputparsertest::{input, input_w_msg, inputfn, ErHandle::*};
 
 fn main() {
     //for Default continue message "Input not supported" when Err
@@ -46,8 +46,11 @@ fn main() {
 
     //for custom loop message and continue/error message
     let l: isize = input_w_msg("Enter the number",Msg("Please enter valid number"));
+
+    //for more Rust way for handling the error
+    let m: usize = inputfn(|| /*use panic if required*/ println!("Continue Error Message"));
  
-    println!("{} {} {} {}", i, j, k,l);
+    println!("{} {} {} {} {}", i, j, k, l, m);
 }
 ```
 

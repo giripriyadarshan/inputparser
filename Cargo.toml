@@ -1,6 +1,6 @@
 [package]
 name = "inputparser"
-version = "0.1.71"
+version = "0.1.72"
 authors = ["Priyadarshan Giri <giripriyadarshan@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/giripriyadarshan/inputparser"
